@@ -28,3 +28,6 @@ def index(request):
             email_message.send()
             messages.success(request, 'Application submitted successfully!')
     return render(request, 'index.html')
+
+def about(request):
+    return render(request, 'about.html')
